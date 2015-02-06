@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sigma"
+            android:id="@+id/tv_sigma"
+            android:layout_marginTop="50dp"
+            android:textSize="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/et_input_number"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input a positive number:"
+            android:id="@+id/tv_label_positive_number"
+            android:layout_marginTop="10dp" android:layout_below="@+id/tv_sigma"
+            android:layout_centerHorizontal="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_input_number"
+            android:minWidth="90dp"
+            android:digits="123456789."
+            android:layout_marginTop="23dp" android:layout_below="@+id/tv_label_positive_number"
+            android:layout_centerHorizontal="true" android:inputType="number"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sum it up!"
+            android:id="@+id/btn_sum"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/et_input_number" android:layout_alignRight="@+id/et_input_number"/>
+</RelativeLayout>
+
